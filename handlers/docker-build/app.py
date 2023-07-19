@@ -1,6 +1,6 @@
 import json
 import base64
-import pickle
+
 
 
 def handler(event, context):
@@ -23,7 +23,10 @@ def handler(event, context):
 
     # Return predictions
     return {
-        "status": 200,
-        "response": "done",
+        "statusCode": 200,
+        "body": "{'message': 'Hello from lambda'}",
+        "headers": {
+            'Content-Type': 'text/html',
+        },
         # "predictions": predictions
     }
