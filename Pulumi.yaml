@@ -1,0 +1,3 @@
+name: infra-meetup
+runtime: nodejs
+description: A minimal AWS TypeScript Pulumi program
